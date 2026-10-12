@@ -26,3 +26,15 @@ python -m assistant "where is the training office?"
 
 tt
 pytest -q
+
+## Evaluation Benchmark
+To run the evaluation script:
+```bash
+python eval/run.py
+```
+
+## Evaluation Benchmark
+To run the evaluation script:
+```bash
+python eval/run.py
+```
