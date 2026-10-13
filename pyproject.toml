@@ -1,16 +1,14 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "assistant"
 version = "0.1.0"
-description = "CSC10014 Smart Virtual Assistant — starter"
+description = "Smart Virtual Assistant - Team Project"
+readme = "README.md"
 requires-python = ">=3.10"
+dependencies = []
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.pytest.ini_options]
-pythonpath = ["src"]
-testpaths = ["tests"]
