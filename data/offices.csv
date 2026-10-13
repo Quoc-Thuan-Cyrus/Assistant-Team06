@@ -1,6 +1,6 @@
-name,room,hours
-Training Office,I.101,Mon-Fri 07:30-16:30
-Student Affairs,I.102,Mon-Fri 08:00-16:00
-Library,B.201,Mon-Sat 07:00-20:00
-IT Helpdesk,E.005,Mon-Fri 08:00-17:00
-Business,B.101,Mon-Fri 7:30-16:30
+training,Training Office,F.01,08:00-16:30
+testing,Testing Office,F.02,08:00-16:30
+student_affairs,Student Affairs Office,A.01,08:00-16:30
+international,International Relations Office,A.02,08:00-16:30
+finance,Finance Office,B.01,08:00-16:30
+science_tech,Science and Technology Office,B.02,08:00-16:30
