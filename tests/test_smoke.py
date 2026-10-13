@@ -8,3 +8,6 @@ def test_new_offices_lookup():
 
 def test_partial_office_name():
     assert "F.01" in reply("where is training")
+
+def test_help_command():
+    assert "I can help" in reply("help")

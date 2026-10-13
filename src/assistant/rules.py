@@ -20,10 +20,12 @@ def reply(message: str, offices: dict[str, dict[str, str]] | None = None) -> str
     text = message.strip().lower().rstrip("?!.")
     if not text:
         return "Please type a question."
+    if text == "help":
+        return "I can help with office locations, opening hours, and general inquiries."
     if text in GREETINGS:
         return "Hello! Ask me where an office is, or when it opens."
     offices = offices if offices is not None else load_offices()
     for name, row in offices.items():
-      if name in text or any(word in text.split() for word in name.split() if len(word) > 3):
+        if name in text or any(word in text.split() for word in name.split() if len(word) > 3):
             return f"{row['name']}: room {row['room']}, open {row['hours']}."
     return "I don't know that yet. Try asking about an office, e.g. 'training office'."
